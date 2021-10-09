@@ -5,7 +5,7 @@ A Kubernetes-Native Virtual Desktop Infrastructure
 ## Installation
 
 ```bash
-$> helm repo add kvdi https://kvdi.github.io/kvdi/deploy/charts
+$> helm repo add kvdi https://kvdi.github.io/helm-charts/charts
 $> helm install kvdi kvdi/kvdi
 ```
 
