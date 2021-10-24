@@ -24,10 +24,10 @@ $> kubectl port-forward svc/kvdi-app 8443:443
 Then visit https://localhost:8443 to use `kVDI`.
 
 If you'd like to see an example of the `helm` values for using vault as the secrets backend,
-you can find documentation in the [examples](../../examples/example-vault-helm-values.yaml) folder.
+you can find documentation in the [examples](https://github.com/kvdi/kvdi/blob/main/deploy/examples/example-vault-helm-values.yaml) folder.
 There are examples for LDAP and OIDC authentication in the same folder.
 
-For an up-to-date and complete list of all available options see the [API Reference](../../../doc/appv1.md).
+For an up-to-date and complete list of all available options see the [API Reference](https://github.com/kvdi/kvdi/blob/main/doc/appv1.md#VDIClusterSpec).
 
 ### Enabling Metrics
 
@@ -36,7 +36,7 @@ you can configure the `kvdi-manager` to manage the `prometheus-operator` resourc
 
 For the time being, the grafana implementation will only work if you let `kVDI` also create the `Prometheus` CR.
 Alternatively, you can let `kVDI` create the `ServiceMonitor` with labels selected by your existing prometheus instances, and use
-the [example dashboard](../../examples/example-grafana-dashboard.json) as a starting point in grafana.
+the [example dashboard](https://github.com/kvdi/kvdi/blob/main/deploy/examples/example-grafana-dashboard.json) as a starting point in grafana.
 
 To enable the in-UI metrics you can do the following:
 
