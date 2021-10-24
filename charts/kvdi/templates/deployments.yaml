@@ -31,7 +31,7 @@ spec:
             - --leader-elect
           command:
             - /manager
-          image: {{ .Values.manager.image.repository }}:{{ default .Values.manager.image.tag .Chart.AppVersion }}
+          image: {{ .Values.manager.image.repository }}:{{ default .Chart.AppVersion .Values.manager.image.tag }}
           imagePullPolicy: {{ .Values.manager.image.pullPolicy }}
           livenessProbe:
             httpGet:
